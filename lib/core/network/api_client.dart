@@ -12,7 +12,6 @@ class ApiClient {
       _logger = Logger();
 
 
-
   Future<dynamic> get(String endpoint) async {
     try {
       final response = await _client.get(Uri.parse('$baseUrl$endpoint'));
